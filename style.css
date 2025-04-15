@@ -141,7 +141,7 @@ span,
 
 .page1{
     height:115vh;
-    background-image: url("images/page1.jpg");
+    background-image: url("page1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -365,7 +365,7 @@ del{
 .sale-container{
     padding-block: 3rem;
     text-align: center;
-    background-image: url("images/womencollection1.jpg");
+    background-image: url("womencollection1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
