@@ -3,58 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us</title>
+  <title>Cart - Shoppy Sphere</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background-color: #f11111;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+    }
+
+    .cart-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+      padding: 1rem 0;
+    }
+
+    .cart-item img {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    .cart-item-details {
+      flex-grow: 1;
+      margin-left: 1rem;
+    }
+
+    .cart-item-details h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .price {
+      font-weight: bold;
       color: #333;
     }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #fff;
+
+    .quantity input {
+      width: 50px;
+      padding: 5px;
+      text-align: center;
     }
-    h1, h2 {
-      color: #0077cc;
+
+    .total {
+      text-align: right;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
-    p {
-      line-height: 1.6;
+
+    .checkout-btn {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 10px 30px;
+      background-color: #f11111;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    .values ul {
-      list-style-type: square;
-      padding-left: 20px;
+
+    .checkout-btn:hover {
+      background-color: #f11111;
+    }
+
+    @media (max-width: 768px) {
+      .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cart-item img {
+        margin-bottom: 1rem;
+      }
+
+      .total {
+        text-align: left;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>About Us</h1>
-    <p>Welcome to <strong>Your Company Name</strong>! We are passionate about delivering exceptional [products/services] and making a positive impact in our industry.</p>
 
-    <h2>Our Mission</h2>
-    <p>To [insert mission here, e.g., revolutionize the way people connect through technology].</p>
+  <div class="navbar">
+    <h1>Shoppy Sphere</h1>
+    <div>Cart</div>
+  </div>
 
-    <h2>Our Story</h2>
-    <p>Founded in [Year], our journey began with a simple idea: [insert origin story]. Since then, we've grown into a dynamic team that serves clients around the globe.</p>
+  <div class="cart-container">
 
-    <h2>What We Believe</h2>
-    <div class="values">
-      <ul>
-        <li><strong>Innovation:</strong> Always improving through creativity and technology.</li>
-        <li><strong>Customer First:</strong> Your satisfaction drives our decisions.</li>
-        <li><strong>Sustainability:</strong> Acting responsibly for a better future.</li>
-      </ul>
+    <!-- Cart Item 1 -->
+    <div class="cart-item">
+      <img src="https://th.bing.com/th/id/OIP.RYDGIDjwaBZwS29J8_B_GgHaHa?rs=1&pid=ImgDetMain" alt="Product 1">
+      <div class="cart-item-details">
+        <h3>MENS SHOES</h3>
+        <p class="price">₹1,999</p>
+      </div>
+      <div class="quantity">
+        <input type="number" value="1" min="1">
+      </div>
     </div>
 
-    <h2>Meet the Team</h2>
-    <p>Our talented and diverse team brings together experts from different fields, all working together to achieve excellence.</p>
+    <!-- Cart Item 2 -->
+    <div class="cart-item">
+      <img src="https://cdna.lystit.com/520/650/n/photos/italist/607dd2b9/longchamp-Pink-Roseau-Leather-Tote.jpeg" alt="Product 2">
+      <div class="cart-item-details">
+        <h3>WOMEN'S HANDBAG</h3>
+        <p class="price">₹1,000</p>
+      </div>
+      <div class="quantity">
+        <input type="number" value="1" min="1">
+      </div>
+    </div>
 
-    <h2>Why Choose Us?</h2>
-    <p>With over [X] years of experience, we've built a reputation for reliability, innovation, and outstanding service.</p>
+    <!-- Cart Item 3 -->
+    <div class="cart-item">
+      <img src="https://th.bing.com/th/id/OIP.ojNDi5bxUfkmqLu70Y2aMAAAAA?rs=1&pid=ImgDetMain" alt="Product 3">
+      <div class="cart-item-details">
+        <h3>SHAMPOO</h3>
+        <p class="price">₹550</p>
+      </div>
+      <div class="quantity">
+        <input type="number" value="1" min="1">
+      </div>
+    </div>
+
+    <!-- Total -->
+    <div class="total">Total: ₹3549</div>
+
+    <!-- Checkout Button -->
+    <button class="checkout-btn">Proceed to Checkout</button>
+
   </div>
+
 </body>
 </html>
+
