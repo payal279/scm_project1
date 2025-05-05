@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Shoppy Sphere</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: url('https://i.pinimg.com/736x/03/23/7e/03237e0d0f5c88d2adf5c02c853fc0ea.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      padding: 2rem;
+      text-align: center;
+      color: #000;
+    }
+
+    .login-card img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .login-card h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 1.2rem;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 40px 10px 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .input-group .icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .login-card button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .login-card button:hover {
+      background-color: #153073;
+    }
+
+    .login-card .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .login-card .options label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .login-card a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    .login-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <img src="https://img.icons8.com/ios-filled/100/000000/user.png" alt="User Icon" />
+    <h2>Login</h2>
+
+    <form>
+      <div class="input-group">
+        <input type="text" placeholder="User" required />
+        <span class="icon">👤</span>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password" required />
+        <span class="icon">🔒</span>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <div class="options">
+        <label><input type="checkbox" /> Remember</label>
+        <a href="#">Forgot password?</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
