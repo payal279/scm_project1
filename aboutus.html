@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Shoppy Sphere</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png'); /* subtle texture */
+      background-color: #f8f9fa;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f11111;
+      padding: 0.8rem 2rem;
+      color: white;
+    }
+
+    .navbar .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar .logo {
+      height: 40px;
+      width: auto;
+      border-radius: 5px;
+    }
+
+    .navbar h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .navbar .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .images-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .images-row img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .images-row img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background: #df1919;
+      color: rgb(238, 179, 179);
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #f11111;
+    }
+
+    .hidden-message {
+      display: none;
+      margin-top: 1rem;
+      color: #f11111;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar .nav-links {
+        margin-top: 0.5rem;
+      }
+
+      .images-row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar with logo and links -->
+  <div class="navbar">
+    <div class="logo-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/1049/1049875.png" alt="Shoppy Sphere Logo" class="logo">
+      <h1>Shoppy Sphere</h1>
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Shoppy Sphere</strong>, we are committed to bringing you a seamless and enjoyable online shopping experience.
+      From electronics to fashion and home essentials, we offer a wide range of products tailored to meet your everyday needs.
+    </p>
+
+    <div class="images-row">
+      <img src="https://wallpaperaccess.com/full/418825.jpg" alt="Fashion">
+      <img src="https://wallpaperaccess.com/full/418804.jpg" alt="Electronics">
+      <img src="https://wallpaperaccess.com/full/418900.jpg" alt="Home">
+    </div>
+
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to deliver quality products at unbeatable prices with fast shipping and outstanding customer service.
+      We believe in making shopping easy, affordable, and accessible to everyone.
+    </p>
+
+    <button onclick="revealMessage()">Click to Learn More</button>
+    <p class="hidden-message" id="moreInfo">
+      Shoppy Sphere is powered by innovation, trust, and a dedicated team ensuring you always get the best deal, every time.
+    </p>
+  </div>
+
+  <script>
+    function revealMessage() {
+      document.getElementById("moreInfo").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
