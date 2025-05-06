@@ -527,6 +527,29 @@ form h3{
   .search-button:hover {
     background-color: #f0f0f0;
   }
+<<<<<<< HEAD
+=======
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 258022ed6f51aa83363ddd8d125434c55cbdb512
 
 @media screen and (max-width: 700px) {
     .navlist{
@@ -557,7 +580,12 @@ form h3{
         color: var(--primary-clr);
     }
 
+<<<<<<< HEAD
     
+=======
+    .hamburger{
+    }
+>>>>>>> 258022ed6f51aa83363ddd8d125434c55cbdb512
 
     .container{
         max-width: 95%;

@@ -1,0 +1,37 @@
+project:
+  name: Shoppy Sphere
+  description: >
+    Shoppy Sphere is a frontend-based shopping website showcasing a collection of fashion items
+    including shoes, purses, belts, dresses, and accessories. Designed to be user-friendly and visually appealing.
+
+  categories:
+    - Shoes
+    - Purses
+    - Belts
+    - Dresses
+    - Accessories
+
+  technologies:
+    frontend:
+      - HTML
+      - CSS
+      - JavaScript
+
+  contributors:
+    - name: Payal
+      role: Project Owner & Developer
+      github_username: Payal279
+    - name: Tanisha
+      role: html developer and content management
+      github_username: tanisha03-prt
+    - name: Prabhleenk-aur
+      role: html css and java developer
+      github_username: prabhleenkaur
+
+  repo:
+    visibility: public
+    platform: GitHub
+
+  deployment:
+    platform: GitHub Pages
+    status: In Progress

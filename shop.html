@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shoppy Sphere - Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fbe4e9; }
+    .header { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; background: #fff; border-bottom: 3px solid #ff4b6e; }
+    .logo { font-size: 2rem; font-weight: bold; }
+    .logo span { color: #ff4b6e; font-weight: bold; }
+    .nav { display: flex; gap: 30px; }
+    .nav a { text-decoration: none; color: #222; font-size: 1rem; font-weight: 500; }
+    .nav a.active, .nav a:hover { color: #ff4b6e; }
+    .search-bar { display: flex; align-items: center; background: #f7f7f7; border-radius: 30px; padding: 5px 15px; }
+    .search-bar input { border: none; background: transparent; outline: none; padding: 8px; width: 180px; }
+    .icons { display: flex; gap: 20px; align-items: center; }
+    .icon { font-size: 1.3rem; cursor: pointer; }
+    .shop-content { padding: 60px 40px; }
+    .shop-content h1 { font-size: 2.5rem; color: #222; margin-bottom: 30px; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; }
+    .product-item { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-align: center; }
+    .product-item img { width: 100%; max-width: 150px; height: auto; margin-bottom: 15px; }
+    .product-item h2 { font-size: 1.1rem; margin: 10px 0 6px 0; }
+    .product-item p { color: #ff4b6e; font-weight: bold; margin-bottom: 10px; }
+    .product-item button { background: #ff4b6e; color: #fff; border: none; padding: 8px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    .product-item button:hover { background: #e13b5d; }
+    @media (max-width: 900px) {
+      .shop-content { padding: 30px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">SHOPPY <span>SPHERE.</span></div>
+    
+    
+    
+  </header>
+  <section class="shop-content">
+    <h1>Shop Our Collection</h1>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSJjcMCeVzBPVo0a5g9r3nEEka9yocLsfBNKhQcKYnS5c_iglgZnuxMPz9JzBa_x3dXvygZHnE6QMNhFhyRZtHGJ08aVrBQsLAW-LKURPi6jAKcdYKHtjsMng" alt="Product 1">
+        <h2>Woman Purses</h2>
+        <p>$19.99</p>
+        
+      </div>
+      <div class="product-item">
+        <img src="https://images.meesho.com/images/products/494380097/yg2ul_1200.jpg" alt="Kids Collection">
+        <h2>Kids Collection</h2>
+        <p>$29.99</p>
+        
+      </div>
+      <div class="product-item">
+        <img src="https://www.mytheresa.com/media/2310/2612/100/8f/P00876854.jpg" alt="Belts">
+        <h2>Belts</h2>
+        <p>$24.99</p>
+        
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </section>
+</body>
+</html>
