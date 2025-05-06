@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wishlist - Shoppy Sphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #d68080;
+        }
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .brand {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .brand span {
+            color: #e63946;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .search-bar {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 340px;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 24px;
+            font-size: 1rem;
+        }
+        /* Main content styling */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+        .login-card {
+            text-align: center;
+            padding: 40px 32px;
+            border-radius: 8px;
+            background: #fafafa;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .login-card img {
+            width: 64px;
+            margin: 24px 0;
+        }
+        .login-btn {
+            margin-top: 24px;
+            padding: 12px 40px;
+            font-size: 16px;
+            background: #fff;
+            border: 2px solid #2874f0;
+            color: #2874f0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background0.2s, color 0.2s;
+        }
+        .login-btn:hover {
+            background: #2874f0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">SHOPPY <span>SPHERE.</span></div>
+        <div class="nav-menu">
+            <a href="#">HOME</a>
+            <a href="#">SHOP</a>
+            
+            <a href="#">BLOG</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="nav-menu">
+            <a href="#"><span>&#128100;</span></a> <!-- Profile icon -->
+            <a href="#"><span>&#128722;</span></a> <!-- Cart icon -->
+            
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="login-card">
+            <h2>PLEASE LOG IN</h2>
+            <p>Login to view items in your wishlist.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" alt="Wishlist Icon">
+            <br>
+            <button class="login-btn">LOGIN</button>
+        </div>
+    </div>
+</body>
+</html>
